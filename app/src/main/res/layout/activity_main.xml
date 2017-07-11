@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.theCreatorLabs.SampleFacebook.app.MainActivity">
+
+    <TextView
+        android:id="@+id/login_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:textStyle="bold"
+        android:layout_alignLeft="@+id/btn_post"
+        android:layout_alignStart="@+id/btn_post" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/btn_fb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="96dp" />
+
+    <Button
+        android:id="@+id/btn_post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_fb_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="post Url" />
+
+    <Button
+        android:id="@+id/btn_post_Image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_post"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="post Image" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/btn_post_Image"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>
